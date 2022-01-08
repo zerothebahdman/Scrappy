@@ -1,8 +1,8 @@
 const dotenv = require('dotenv');
 
-dotenv.config({ path: 'src/.env' });
+dotenv.config();
 
-const app = require('./index');
+const app = require('./app');
 
 const port = process.env.APP_PORT;
 
