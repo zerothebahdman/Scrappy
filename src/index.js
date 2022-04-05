@@ -86,3 +86,9 @@
 //   }
 // })();
 // module.exports = app;
+
+const scrape = require('./browser');
+const scraperController = require('./scraperController');
+
+const browserInstance = scrape.scrape();
+scraperController(browserInstance);
